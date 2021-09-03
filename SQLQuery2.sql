@@ -22,4 +22,21 @@
 --SELECT COUNT(WordCount) as 'Total Poems Words'
 --FROM Poem;
 
+--SELECT Title, a.Name as Author, WordCount
+--FROM Poem 
+--	LEFT JOIN Author a on Poem.AuthorId = a.Id
+--WHERE WordCount = (SELECT MIN(WordCount) FROM Poem);
+
+--SELECT COUNT(a.GradeId) as 'Number of Authors in 3rd Grade'
+--FROM Author a
+--	JOIN Grade g ON a.GradeId = g.Id;
+
+SELECT TOP 2 COUNT(a.GradeID) as 'Number of Authors in 1st-3rd Grade'
+FROM Author a
+	JOIN Grade g ON a.GradeId = g.Id
+WHERE 
+--SELECT p.ID COUNT(*)
+--FROM Poem p
+--JOIN Grade g ON p.
+
 
